@@ -1,0 +1,62 @@
+{{set . "title" "SearchMe"}}
+{{template "header.html" .}}
+
+<header class="jumbotron" style="background-color:#A9F16C">
+  <div class="container">
+    <div class="row">
+      <h1>Searching player {{.steamId}}</h1>
+      <p></p>
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+  <h1>Player Info</h1>
+
+  <h3>Result</h3>
+  <div class="row">
+    {{.res}}
+  </div>
+
+  <h3>Json Response</h3>
+  <div class="row">
+    {{.json}}
+  </div>
+
+  <h3>Error</h3>
+  <div class="row">
+    {{.err}}
+  </div>
+
+  <hr>
+
+  <h1>Player Stats</h1>
+
+  <h3>Result</h3>
+  <div class="row">
+    {{.resStats}}
+  </div>
+
+  <h3>Json Response</h3>
+  <div class="row">
+    {{.jsonStats}}
+  </div>
+
+  <h3>Error</h3>
+  <div class="row">
+    {{.errStats}}
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      {{template "flash.html" .}}
+    </div>
+  </div>
+</div>
+
+{{template "footer.html" .}}
