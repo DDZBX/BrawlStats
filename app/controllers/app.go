@@ -11,8 +11,8 @@ type App struct {
 	*revel.Controller
 }
 
-var API_KEY string = "6RWCS0DHQ0IWVDZNGKTNFAIH13W0U"
-var DodoSteamId string = "76561197980126328"
+var API_KEY string = ""
+var DodoSteamId string = ""
 
 func (c App) Index() revel.Result {
 	return c.Render()
